@@ -13,7 +13,7 @@ def ecs_fargate_agent_definition(mocker):
     mocker.patch(
         "prefect_setup.prefect_agent.start_agent._get_ecs_fargate_agent_definition",
         return_value=ECSAgent(
-            region_name="ap-southeast-2",
+            region_name="us-east-1",
             cluster="unit-test-cluster",
             labels=["test_dataflow_automation"],
             run_task_kwargs_path="tests/unit/prefect_setup/prefect_agent/agent_conf_mock.yaml",
