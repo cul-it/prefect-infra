@@ -12,8 +12,8 @@ env:
     # terraform
     tf_working_dir: './aws_infrastructure'
     tf_version: 'latest'
-    tf_artifacts_bucket: 'dataflow-automation-infra-artifacts'
-    tf_state_bucket: 'dataflow-automation-infra-tf-state'
+    tf_artifacts_bucket: 'prefect-infra-sb-tf-artifacts'
+    tf_state_bucket: 'prefect-infra-sb-tf-state'
     # prefect agent
     prefect_agent_working_dir: './prefect_setup/prefect_agent'
     agent_cpu: 512
